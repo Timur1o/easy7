@@ -1,0 +1,72 @@
+.footer {
+  max-width: 1440px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+}
+.footer__title {
+  font-weight: 500;
+  font-size: 64px;
+  margin: 80px 0 0;
+}
+.footer__subtitle {
+  margin: 40px 0 0;
+}
+.footer__subscribe {
+  width: 278px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 100px;
+  margin: 40px 0 0;
+  text-align: center;
+}
+.footer__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 100px;
+  border: 1px #FFF solid;
+  background-color: #0A0A0A;
+  color: #FFF;
+  width: 171px;
+  height: 40px;
+  margin: 40px 0 0 10px;
+}
+.footer__copyrights {
+  margin: 40px 0 0;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 40px 0 0;
+  }
+  .footer__subtitle {
+    width: 280px;
+    font-size: 16px;
+    margin: 20px 0 0;
+  }
+  .footer__subscribe {
+    margin: 20px 0 0;
+  }
+  .footer__button {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0 0;
+  }
+  .footer__copyrights {
+    margin: 20px 0 0;
+    padding-bottom: 40px;
+    width: 280px;
+  }
+}/*# sourceMappingURL=footer.css.map */

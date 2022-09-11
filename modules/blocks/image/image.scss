@@ -1,0 +1,21 @@
+.image {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 80px 0 0;
+
+    &__big-one {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    &__big-two {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .image {
+        margin: 40px 0 0;
+    }
+  }
+

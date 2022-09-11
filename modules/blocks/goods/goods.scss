@@ -1,0 +1,95 @@
+.goods {
+    max-width: 1440px;
+    margin: 80px 0 0;
+
+    &__title {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 80px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__items {
+        display: flex;
+        width: 100%;
+        margin: 40px 0 0;
+        position: relative;
+    }
+
+    &__items__card {
+        display: flex;
+        width: 326px;
+        height: 400px;
+        position: relative;
+    }
+
+
+    &__items__card-buy {
+        cursor: pointer;
+        background-image: url(../images/buybutton.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 116px;
+        height: 40px;
+        border-radius: 100px;
+        border: none;
+        color: #FFF;
+        background-color: #000;
+        transition: .2s;
+        position:absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    &__items__card-previous {
+        cursor: pointer;
+        background-image: url(../images/arrow-left.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        min-width: 40px;
+        min-height: 40px;
+        border: none;
+        transition: .2s;
+        position:absolute;
+        left: 20px;
+        bottom: 180px;
+        
+    }
+
+    &__items__card-next {
+        cursor: pointer;
+        background-image: url(../images/arrow-right.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        min-width: 40px;
+        min-height: 40px;
+        border: none;
+        transition: .2s;
+        position:absolute;
+        right: 20px;
+        bottom: 180px;
+        
+    }
+}
+
+@media (max-width:767px) {
+    .goods {
+        margin: 40px 0 0;
+    }
+
+    .goods__title {
+      font-size: 32px;  
+      line-height: 40px;
+    }
+
+
+    .goods__items__card-buy {
+        width: 286px;
+        font-size: 16px;
+    }
+  }

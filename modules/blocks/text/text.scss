@@ -1,0 +1,75 @@
+.text {
+    max-width: 1440px;
+    display: flex;
+    margin: 80px 20px 0 20px;
+    justify-content: space-between;
+
+    &__training {
+        max-width: 460px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    &__practice {
+        max-width: 690px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    &__disciple {
+        max-width: 690px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+}
+
+@media (max-width:1023px) {
+    .text {
+        margin: 80px 20px 0;
+    }
+
+    .text__training {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 360px;
+        margin: 0;
+    }
+
+    .text__practice {
+        margin: 0;
+        font-size: 17px;
+        max-width: 360px;
+    }
+
+    .text__disciple {
+        max-width: 360px;
+        font-size: 17px;
+        margin: 0 0 0 auto;
+    }
+  }
+
+@media (max-width:767px) {
+    .text {
+        flex-direction: column;
+        margin: 40px 20px 0;
+    }
+
+    .text__training {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 164px;
+        margin: 0;
+    }
+
+    .text__practice {
+        margin: 20px auto 0;
+        font-size: 17px;
+    }
+  }

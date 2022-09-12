@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page {
   font-family: "Golos", Arial, sans-serif;
   background-color: #0A0A0A;
@@ -241,6 +242,7 @@
 }
 .goods {
   max-width: 1440px;
+  width: 100%;
   margin: 80px 0 0;
 }
 .goods__title {
@@ -250,23 +252,37 @@
   text-align: center;
   margin: 0;
 }
+.goods__scroller {
+  position: relative;
+}
 .goods__items {
   display: flex;
   width: 100%;
   margin: 40px 0 0;
-  position: relative;
+  overflow-x: scroll;
+}
+.goods__items::-webkit-scrollbar { /* ширина всей полосы прокрутки */
+  height: 4px;
+}
+.goods__items::-webkit-scrollbar-track { /* ширина рельсов */
+  background-color: #000;
+  border-radius: 100px;
+}
+.goods__items::-webkit-scrollbar-thumb { /* ширина ползунка */
+  border-radius: 100px;
+  background-color: #FFF;
 }
 .goods__items__card {
   display: flex;
   width: 326px;
   height: 400px;
   position: relative;
+  padding-bottom: 44px;
 }
 .goods__items__card-buy {
   cursor: pointer;
-  background-image: url(../images/buybutton.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 16px;
   width: 116px;
   height: 40px;
   border-radius: 100px;
@@ -276,7 +292,7 @@
   transition: 0.2s;
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  top: 340px;
 }
 .goods__items__card-previous {
   cursor: pointer;
@@ -291,7 +307,8 @@
   transition: 0.2s;
   position: absolute;
   left: 20px;
-  bottom: 180px;
+  top: 180px;
+  z-index: 1;
 }
 .goods__items__card-next {
   cursor: pointer;
@@ -306,7 +323,8 @@
   transition: 0.2s;
   position: absolute;
   right: 20px;
-  bottom: 180px;
+  top: 180px;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -316,6 +334,9 @@
   .goods__title {
     font-size: 32px;
     line-height: 40px;
+  }
+  .goods__items__card {
+    padding-bottom: 24px;
   }
   .goods__items__card-buy {
     width: 286px;

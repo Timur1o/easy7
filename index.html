@@ -14,7 +14,7 @@
     </header>
     <main class="content">
         <section class="about">
-            <h2 class="about__title">О КОЛЛЕКЦИИ</h2>
+            <h2 class="about__title" id="about">О КОЛЛЕКЦИИ</h2>
             <div class="about__info">
                 <p class="about__info-text">Разум или тело, движение или покой, спорт или отдых — дисциплина всегда остаётся движущей силой прогресса. 
                     Открой для себя мир невероятной концентрации и преданности делу. 
@@ -35,30 +35,32 @@
                 Ив Тюмор превращает силовые тренировки в эксперимент по испытанию силы духа.</p>
         </section>
         <section class="goods">
-            <h2 class="goods__title">ТОВАРЫ</h2>
-            <div class="goods__items">
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab.svg" alt="item1">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (1).svg" alt="item2">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (2).svg" alt="item2">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (3).svg" alt="item3">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (4).svg" alt="item4">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
+            <h2 class="goods__title" id="goods">ТОВАРЫ</h2>
+            <div class="goods__scroller">
                 <button aria-label="Buy" type="button" class="goods__items__card-previous" onclick="previousSlide()"></button>
                 <button aria-label="Buy" type="button" class="goods__items__card-next" onclick="nextSlide()"></button>
+                <div class="goods__items">
+                    <div class="goods__items__card">
+                        <img class="goods__items__card-image" src="./images/nikelab.svg" alt="item1">
+                        <button aria-label="Buy" type="button" class="goods__items__card-buy">КУПИТЬ</button>
+                    </div>
+                    <div class="goods__items__card">
+                        <img class="goods__items__card-image" src="./images/nikelab (1).svg" alt="item2">
+                        <button aria-label="Buy" type="button" class="goods__items__card-buy">КУПИТЬ</button>
+                    </div>
+                    <div class="goods__items__card">
+                        <img class="goods__items__card-image" src="./images/nikelab (2).svg" alt="item2">
+                        <button aria-label="Buy" type="button" class="goods__items__card-buy">КУПИТЬ</button>
+                    </div>
+                    <div class="goods__items__card">
+                        <img class="goods__items__card-image" src="./images/nikelab (3).svg" alt="item3">
+                        <button aria-label="Buy" type="button" class="goods__items__card-buy">КУПИТЬ</button>
+                    </div>
+                    <div class="goods__items__card">
+                        <img class="goods__items__card-image" src="./images/nikelab (4).svg" alt="item4">
+                        <button aria-label="Buy" type="button" class="goods__items__card-buy">КУПИТЬ</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="text">
@@ -72,7 +74,7 @@
         </section>
     </main>
     <footer class="footer">
-        <h2 class="footer__title">ПОДПИСАТЬСЯ</h2>
+        <h2 class="footer__title" id="subscribe">ПОДПИСАТЬСЯ</h2>
         <p class="footer__subtitle">Укажите свой email чтобы быть в курсе даты релиза, и других новостей о коллекции</p>
         <input type="text" name="email" class="footer__subscribe" placeholder="Введите email"><button class="footer__button">ПОДПИСАТЬСЯ</button>
         <p class="footer__copyrights">© Nike, Inc., 2021. Какие-то права защищены.</p>
@@ -80,9 +82,9 @@
     <section class="menu">
         <button aria-label="Close" type="button" class="menu__close-button" onclick="closeMenu()"></button>
         <nav class="menu__list">
-            <a href="https://yandex.ru/maps" class="menu__link">О КОЛЛЕКЦИИ</a>
-            <a href="https://yandex.ru/maps" class="menu__link">ТОВАРЫ</a>
-            <a href="https://yandex.ru/maps" class="menu__link">ПОДПИСАТЬСЯ</a>
+            <a href="#about" class="menu__link" onclick="closeMenu()">О КОЛЛЕКЦИИ</a>
+            <a href="#goods" class="menu__link" onclick="closeMenu()">ТОВАРЫ</a>
+            <a href="#subscribe" class="menu__link" onclick="closeMenu()">ПОДПИСАТЬСЯ</a>
         </nav>
     </section>
     </div>

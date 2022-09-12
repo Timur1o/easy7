@@ -1,3 +1,5 @@
+!Необходимо доработать слайдер итемов
+
 NIKE MMW. Проект Яндекс.Практикума.
 Проект является сайтом с десктопным и мобильной версиями разрешения экрана.
 
@@ -11,7 +13,7 @@ Flexbox вёрстка
 Файловая структура проекта по правилам Nested БЭМ
 
 
-MIKE MMW. The project for Yandex.Praktikum
+NIKE MMW. The project for Yandex.Praktikum
 
 Stack
 HTML

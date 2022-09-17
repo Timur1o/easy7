@@ -1,66 +1,75 @@
 .text {
-  max-width: 1440px;
   display: flex;
-  margin: 80px 20px 0 20px;
+  justify-content: space-between;
+  margin: 0;
+  flex-direction: column;
+}
+.text__image {
+  width: 100%;
+  margin: 80px 0 0;
+}
+.text__block {
+  display: flex;
+  margin: 80px 20px 0;
   justify-content: space-between;
 }
-.text__training {
+.text__title {
   max-width: 460px;
   text-align: left;
   font-weight: 500;
   font-size: 31px;
   line-height: 40px;
   margin: 0;
+  text-transform: uppercase;
 }
-.text__practice {
+.text__subtitle {
   max-width: 690px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
 }
-.text__disciple {
-  max-width: 690px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
+.text__subtitle_right {
+  margin: 80px 20px 0 auto;
 }
 
 @media (max-width: 1023px) {
-  .text {
-    margin: 80px 20px 0;
-  }
-  .text__training {
+  .text__title {
     font-size: 24px;
     line-height: 32px;
     max-width: 360px;
     margin: 0;
   }
-  .text__practice {
-    margin: 0;
-    font-size: 17px;
+  .text__subtitle {
+    font-size: 16px;
     max-width: 360px;
   }
-  .text__disciple {
-    max-width: 360px;
-    font-size: 17px;
-    margin: 0 0 0 auto;
+  .text__subtitle_right {
+    margin-top: 80px;
   }
 }
 @media (max-width: 767px) {
   .text {
     flex-direction: column;
-    margin: 40px 20px 0;
   }
-  .text__training {
+  .text__block {
+    display: block;
+    margin: 40px 0 0;
+  }
+  .text__image {
+    margin: 40px 0 0;
+  }
+  .text__title {
     font-size: 20px;
     line-height: 28px;
     max-width: 164px;
-    margin: 0;
+    margin: 0 20px 0;
   }
-  .text__practice {
-    margin: 20px auto 0;
+  .text__subtitle {
+    margin: 20px 20px 0;
     font-size: 17px;
+  }
+  .text__subtitle_right {
+    margin: 40px 20px 0;
   }
 }/*# sourceMappingURL=text.css.map */

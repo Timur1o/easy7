@@ -1,5 +1,5 @@
 const menu = document.querySelector('.menu');
-const items = document.querySelector(".goods__items");
+const items = document.querySelector('.goods__items');
 
 function showMenu(menu) {
     menu.classList.add('menu_opened');

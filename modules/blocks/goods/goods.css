@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .goods {
-  max-width: 1440px;
   width: 100%;
   margin: 80px 0 0;
 }
@@ -10,6 +9,29 @@
   line-height: 80px;
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
+}
+.goods__arrow {
+  cursor: pointer;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  transition: 0.2s;
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+}
+.goods__arrow_prev {
+  background-image: url(../images/arrow-left.svg);
+  left: 20px;
+}
+.goods__arrow_next {
+  background-image: url(../images/arrow-right.svg);
+  right: 20px;
 }
 .goods__scroller {
   position: relative;
@@ -19,6 +41,7 @@
   width: 100%;
   margin: 40px 0 0;
   overflow-x: scroll;
+  padding: 0;
 }
 .goods__items::-webkit-scrollbar { /* ширина всей полосы прокрутки */
   height: 4px;
@@ -31,19 +54,19 @@
   border-radius: 100px;
   background-color: #FFF;
 }
-.goods__items__card {
+.goods__items_card {
   display: flex;
   width: 326px;
-  height: 400px;
+  min-height: 400px;
   position: relative;
   padding-bottom: 44px;
 }
-.goods__items__card-buy {
+.goods__items_card-buy {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   width: 116px;
-  height: 40px;
+  min-height: 40px;
   border-radius: 100px;
   border: none;
   color: #FFF;
@@ -52,38 +75,6 @@
   position: absolute;
   left: 20px;
   top: 340px;
-}
-.goods__items__card-previous {
-  cursor: pointer;
-  background-image: url(../images/arrow-left.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-  min-width: 40px;
-  min-height: 40px;
-  border: none;
-  transition: 0.2s;
-  position: absolute;
-  left: 20px;
-  top: 180px;
-  z-index: 1;
-}
-.goods__items__card-next {
-  cursor: pointer;
-  background-image: url(../images/arrow-right.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-  min-width: 40px;
-  min-height: 40px;
-  border: none;
-  transition: 0.2s;
-  position: absolute;
-  right: 20px;
-  top: 180px;
-  z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -94,11 +85,13 @@
     font-size: 32px;
     line-height: 40px;
   }
-  .goods__items__card {
+  .goods__items {
+    margin: 20px 0 0;
+  }
+  .goods__items_card {
     padding-bottom: 24px;
   }
-  .goods__items__card-buy {
+  .goods__items_card-buy {
     width: 286px;
-    font-size: 16px;
   }
 }/*# sourceMappingURL=goods.css.map */

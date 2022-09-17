@@ -1,5 +1,4 @@
 .footer {
-  max-width: 1440px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -9,13 +8,14 @@
   font-weight: 500;
   font-size: 64px;
   margin: 80px 0 0;
+  text-transform: uppercase;
 }
 .footer__subtitle {
   margin: 40px 0 0;
 }
 .footer__subscribe {
   width: 278px;
-  height: 40px;
+  min-height: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -24,6 +24,7 @@
   text-align: center;
 }
 .footer__button {
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -32,8 +33,9 @@
   background-color: #0A0A0A;
   color: #FFF;
   width: 171px;
-  height: 40px;
+  min-height: 40px;
   margin: 40px 0 0 10px;
+  text-transform: uppercase;
 }
 .footer__copyrights {
   margin: 40px 0 0;
@@ -61,7 +63,7 @@
   }
   .footer__button {
     width: 280px;
-    height: 40px;
+    min-height: 40px;
     margin: 10px 0 0;
   }
   .footer__copyrights {

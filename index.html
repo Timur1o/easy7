@@ -8,13 +8,20 @@
 </head>
 <body class="page">
     <header class="header">
+        <div class="menu">
+            <button aria-label="Close" type="button" class="menu__close-button" onclick="closeMenu()"></button>
+            <nav class="menu__list">
+                <a href="#about" class="menu__link" onclick="closeMenu()">О коллекции</a>
+                <a href="#goods" class="menu__link" onclick="closeMenu()">Товары</a>
+                <a href="#footer" class="menu__link" onclick="closeMenu()">Подписаться</a>
+            </nav>
+        </div>
         <button aria-label="Menu button" type="button" class="header__menu-button" onclick="openMenu()"></button>
-        <h1 class="header__hero-text">NIKE X MMW 
-            TRAINING 4.0</h1>
+        <h1 class="header__hero-text">NIKE X MMW TRAINING 4.0</h1>
     </header>
     <main class="content">
         <section class="about">
-            <h2 class="about__title">О КОЛЛЕКЦИИ</h2>
+            <h2 class="about__title" id="about">О коллекции</h2>
             <div class="about__info">
                 <p class="about__info-text">Разум или тело, движение или покой, спорт или отдых — дисциплина всегда остаётся движущей силой прогресса. 
                     Открой для себя мир невероятной концентрации и преданности делу. 
@@ -24,68 +31,78 @@
                 <img class="about__info-image" src="./images/image2.svg" alt="InfoImage">
             </div>
         </section>
-        <section class="image">
-            <img class="image__big-one" src="./images/imagebig.svg" alt="collection">
-        </section>
         <section class="text">
-            <p class="text__training">ТРЕНИНГ — ЭТО НЕ ПРОСТО ФИЗИЧЕСКАЯ АКТИВНОСТЬ</p>
-            <p class="text__practice">Это практика для тела и разума, за которой стоят концентрация и дисциплина.
-                Мэттью Уильямс выражает эту идею через чередование движения и осознанности.
-                Исамайя Ффренч исследует свою способность совершать тяжёлые повторяющиеся действия с помощью йоги.
-                Ив Тюмор превращает силовые тренировки в эксперимент по испытанию силы духа.</p>
+            <img class="text__image" src="./images/imagebig.svg" alt="collection">
+                <div class="text__block">
+                    <h2 class="text__title">Тренинг — это не просто физическая активность</h2>
+                    <p class="text__subtitle">Это практика для тела и разума, за которой стоят концентрация и дисциплина.
+                    Мэттью Уильямс выражает эту идею через чередование движения и осознанности.
+                    Исамайя Ффренч исследует свою способность совершать тяжёлые повторяющиеся действия с помощью йоги.
+                    Ив Тюмор превращает силовые тренировки в эксперимент по испытанию силы духа.</p>
+                </div>
         </section>
         <section class="goods">
-            <h2 class="goods__title">ТОВАРЫ</h2>
-            <div class="goods__items">
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab.svg" alt="item1">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (1).svg" alt="item2">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (2).svg" alt="item2">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (3).svg" alt="item3">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <div class="goods__items__card">
-                    <img class="goods__items__card-image" src="./images/nikelab (4).svg" alt="item4">
-                    <button aria-label="Buy" type="button" class="goods__items__card-buy"></button>
-                </div>
-                <button aria-label="Buy" type="button" class="goods__items__card-previous" onclick="previousSlide()"></button>
-                <button aria-label="Buy" type="button" class="goods__items__card-next" onclick="nextSlide()"></button>
+            <h2 class="goods__title" id="goods">Товары</h2>
+            <div class="goods__scroller">
+                <button aria-label="Buy" type="button" class="goods__arrow goods__arrow_prev" onclick="previousSlide()"></button>
+                <button aria-label="Buy" type="button" class="goods__arrow goods__arrow_next" onclick="nextSlide()"></button>
+                <ul class="goods__items">
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-1.jpg" alt="item1">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-2.jpg" alt="item2">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-3.jpg" alt="item3">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items__card-image" src="./images/nikelab-item-4.jpg" alt="item4">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items__card-image" src="./images/nikelab-item-5.jpg" alt="item5">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-6.jpg" alt="item6">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-7.jpg" alt="item7">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-8.jpg" alt="item8">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                    <li class="goods__items_card">
+                        <img class="goods__items_card-image" src="./images/nikelab-item-9.jpg" alt="item9">
+                        <button aria-label="Buy" type="button" class="goods__items_card-buy">КУПИТЬ</button>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="text">
-            <p class="text__disciple">Дисциплина — упражнение, которое ты практикуешь ежедневно. 
+            <p class="text__subtitle text__subtitle_right">Дисциплина — упражнение, которое ты практикуешь ежедневно. 
                 Ты учишь свои разум и тело переносить суровые условия и достигать невозможного. 
                 Раскрой свою внутреннюю силу с новой коллекцией MMW, 
                 в которой идея дисциплины передается через высочайшее качество исполнения и исключительную выразительность.</p>
-        </section>
-        <section class="image">
-            <img class="image__big-two" src="./images/imagebig2.svg" alt="collection2">
+            <img class="text__image" src="./images/imagebig2.svg" alt="collection2">
         </section>
     </main>
     <footer class="footer">
-        <h2 class="footer__title">ПОДПИСАТЬСЯ</h2>
+        <h2 class="footer__title" id="footer">Подписаться</h2>
         <p class="footer__subtitle">Укажите свой email чтобы быть в курсе даты релиза, и других новостей о коллекции</p>
-        <input type="text" name="email" class="footer__subscribe" placeholder="Введите email"><button class="footer__button">ПОДПИСАТЬСЯ</button>
+        <form name="subscribe">
+            <input type="text" name="email" class="footer__subscribe" placeholder="Введите email">
+            <button class="footer__button">Подписаться</button>
+        </form> 
         <p class="footer__copyrights">© Nike, Inc., 2021. Какие-то права защищены.</p>
     </footer>
-    <section class="menu">
-        <button aria-label="Close" type="button" class="menu__close-button" onclick="closeMenu()"></button>
-        <nav class="menu__list">
-            <a href="https://yandex.ru/maps" class="menu__link">О КОЛЛЕКЦИИ</a>
-            <a href="https://yandex.ru/maps" class="menu__link">ТОВАРЫ</a>
-            <a href="https://yandex.ru/maps" class="menu__link">ПОДПИСАТЬСЯ</a>
-        </nav>
-    </section>
-    </div>
 </body>
-<script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </html>

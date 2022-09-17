@@ -36,7 +36,6 @@
         outline: none;
         transition: 0.2s;
         padding: 0;
-        margin: 40px 0 0 40px;
         position: absolute;
         top: 40px;
         left: 40px;
@@ -45,8 +44,6 @@
     &__list {
         display: flex;
         flex-direction: column;
-        padding-top: 265px;
-        padding-bottom: 265px;
         text-align: center;
     }
 
@@ -54,6 +51,7 @@
         margin-bottom: 80px;
         color: #FFFFFF;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     &__link:nth-child(3) {
